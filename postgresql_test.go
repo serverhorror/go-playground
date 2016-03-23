@@ -8,7 +8,7 @@ import (
 )
 
 func TestPostgreSQLConnection(t *testing.T) {
-	db, err := sql.Open("postgres", "postgresql://reader:reader@vie-bio-postgres.eu.boehringer.com/postgres?sslmode=disable")
+	db, err := sql.Open("postgres", "postgresql://user:password@host/postgres?sslmode=disable")
 	if err != nil {
 		t.Fatal(err)
 	}
