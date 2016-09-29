@@ -2,7 +2,6 @@ package main
 
 import (
 	"log"
-	"time"
 
 	pb "github.com/serverhorror/go-playground/gRPCLab/echo"
 
@@ -40,5 +39,4 @@ func main() {
 	}
 
 	log.Printf("Resp: %v", resp)
-	time.Sleep(5 * time.Second)
 }
